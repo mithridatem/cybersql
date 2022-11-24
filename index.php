@@ -1,5 +1,6 @@
 <?php
     include './utils/fonctions.php';
+    
     //utilisation de session_start(pour gérer la connexion au serveur)
     session_start();
 
@@ -14,7 +15,7 @@
             include './controller/ctrl_show_article.php';
             break;
         case '/cyber/inscription':
-            include './utils/connectBddAdmin.php';
+            include './utils/connectBddUtilisateur.php';
             include './controller/ctrl_inscription.php';
             break;
         case '/cyber/connexion':
