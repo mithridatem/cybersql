@@ -1,5 +1,5 @@
 <?php
-    include './utils/functions.php';
+    include './utils/fonctions.php';
     //utilisation de session_start(pour gérer la connexion au serveur)
     session_start();
 

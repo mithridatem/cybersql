@@ -19,7 +19,7 @@
         }
         public function getUserByMail($bdd){
             $mail = $this->getMail();
-            $req = $bdd->prepare('SELECT nom_utilisateur, prenom_utilisateur, 
+            $req = $bdd->prepare('SELECT id_utilisateur, nom_utilisateur, prenom_utilisateur, 
             mail_utilisateur, password_utilisateur, id_role
              FROM utilisateur WHERE mail_utilisateur = ?');
             $req->bindParam(1, $mail, PDO::PARAM_STR);
